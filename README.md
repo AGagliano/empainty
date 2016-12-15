@@ -10,6 +10,8 @@ The following are instructions for getting Empainty up and running.
 * `palette_box_12x24.ai` has a laser cut template for constructing the box. 
 * Attach 6 servos (we used sub-micro servos) to the inside back panel. We suggest velcro to make taking the lids on and off easier (for constructing and debugging purposes). Note, due to unidentifiable electronics issues we could only get 4 servos working, but left the middle 2 as placeholders.
 
+<img src="https://github.com/AGagliano/empainty/blob/master/box_dimensions/palette_box_12x24.JPG" width=300>
+
 
 * Schematic for the servos attached to Computer A:
 
