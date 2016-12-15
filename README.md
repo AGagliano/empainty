@@ -39,13 +39,13 @@ On all computers place the libraries from this github in your Documents/Arduino/
 * Replace `Servo.h` and `Servo.cpp` in your computer in the following folder with the ones here: `Applications/Arduino.app/Contents/Java/libraries/Servo/src/` and `...src/avr`, respectively
 * Open `empainty.ino`
 * Open `Brushes_to_Arduino.pde` (make sure the port for myPort is set to the port your Arduino is connected to. Something like: "/dev/cu.usbmodem1441").
-* Look up your IP number. This will be used in code on Computer B and Computer C to set up a TCP server for gestures that are recognized on computers B and C to then be sent to Computer A. 
+* Look up your IP address. This will be used in code on Computer B and Computer C to set up a TCP server for gestures that are recognized on computers B and C to then be sent to Computer A. 
 
 
 **Computer B:** 
 * Follow the instructions to install ESP by David Mellis: https://github.com/damellis/ESP (you can run ESP in Xcode or Processing)
 * Open `user_accelerometer_gestures.cpp` from ESP examples
-* Change the `TcpOStream oStream(“localhost”, 5204)` to `TcpOStream oStream(“IP address of Computer A”, 5203)`
+* Change the `TcpOStream oStream(“localhost”, 5204)` to `TcpOStream oStream(“IP address of Computer A”, <b>5203</b>)`
 This will send the detected gestures over a TCP server to the Processing sketch on Computer A.
 * Open `brush_accel.ino`
 
