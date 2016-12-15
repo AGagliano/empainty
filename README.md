@@ -73,6 +73,8 @@ This will send the detected gestures over a TCP server to the Processing sketch 
 * As you move the paintbrush around you should see predicted gesture numbers in the raw data. Computer A should see these numbers coming in their Processing console. 
 * As the gestures come in, the palette box lids should move towards the ‘warmer’ or ‘cooler’ colors depending how similar/different the brush strokes are. 
 
+<img src="https://github.com/AGagliano/empainty/blob/master/box_dimensions/IMG_0156.PNG" width=300>
+
 
 Three computers need to be used because of limits on data flowing on Serial ports, Processing sketches that can be open, and Arduino sketches that can be open. Here's a schematic for the flow of information:
 
