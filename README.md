@@ -37,6 +37,7 @@ On all computers place the libraries from this github in your Documents/Arduino/
 
 **Computer A:**
 * Replace `Servo.h` and `Servo.cpp` in your computer in the following folder with the ones here: `Applications/Arduino.app/Contents/Java/libraries/Servo/src/` and `...src/avr`, respectively
+* Put the folders in `libraries` into Arduino libraries likely in `Documents/Arduino/libraries`
 * Open `empainty.ino`
 * Open `Brushes_to_Arduino.pde` (make sure the port for myPort is set to the port your Arduino is connected to. Something like: "/dev/cu.usbmodem1441").
 * Look up your IP address. This will be used in code on Computer B and Computer C to set up a TCP server for gestures that are recognized on computers B and C to then be sent to Computer A. 
