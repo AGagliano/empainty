@@ -45,7 +45,7 @@ On all computers place the libraries from this github in your Documents/Arduino/
 **Computer B:** 
 * Follow the instructions to install ESP by David Mellis: https://github.com/damellis/ESP (you can run ESP in Xcode or Processing)
 * Open `user_accelerometer_gestures.cpp` from ESP examples
-* Change the `TcpOStream oStream(“localhost”, 5204)` to `TcpOStream oStream(“IP address of Computer A”, <b>5203</b>)`
+* Change the `TcpOStream oStream(“localhost”, 5204)` to `TcpOStream oStream(“IP address of Computer A”, 5203)`
 This will send the detected gestures over a TCP server to the Processing sketch on Computer A.
 * Open `brush_accel.ino`
 
